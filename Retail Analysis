@@ -1,0 +1,78 @@
+# Retail Sales Analysis SQL Project
+
+This project analyzes retail sales transaction data stored in a SQL database to generate insights on sales performance, customer demographics, product categories, and purchasing trends. The data covers transaction-level details such as sale date/time, customer info, product category, quantity, pricing, and cost metrics.
+
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Setup and Installation](#setup-and-installation)
+- [Usage](#usage)
+- [Database Schema](#database-schema)
+- [Sample Queries](#sample-queries)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+## Project Overview
+The project uses a SQL database named `sql_project_p2` containing the `retail_sales` table, which holds detailed sales transactions. Objectives include:
+- Cleaning and validating sales data to handle null or missing values
+- Summarizing sales by category, gender, and customer demographics
+- Analyzing sales trends over time, including monthly averages and peak sales periods
+- Identifying top customers by total sales
+- Segmenting sales by time of day (morning, afternoon, evening)
+
+## Features
+- Data cleaning by removing records with null critical fields
+- Sales aggregation by category and gender
+- Monthly ranking of average sales to identify peak months
+- Filtering and detailed retrieval of sales transactions with criteria
+- Customer segmentation and top customer identification
+- Time-based sales shift classification using SQL time functions
+
+## Setup and Installation
+1. Clone this repository (replace with actual repo URL if available):
+
+2. Create the database and table by running the provided SQL script:
+
+3. Import your sales data into the `retail_sales` table.
+4. Use a SQL client compatible with your database (PostgreSQL recommended) to run analytical queries.
+
+## Usage
+- Connect to the SQL database using any client or IDE.
+- Execute the queries for data cleanup, summary, and analysis.
+- Modify sample queries as needed to explore additional insights or answer business questions.
+
+## Database Schema
+The `retail_sales` table contains the following key fields:
+
+| Column Name      | Data Type | Description                          |
+|------------------|-----------|------------------------------------|
+| transactions_id  | int       | Unique sale transaction identifier |
+| sale_date        | date      | Date of the sale                   |
+| sale_time        | time      | Time of the sale                   |
+| customer_id      | int       | Identifier for the customer         |
+| gender           | varchar   | Customer gender                    |
+| age              | int       | Customer age                      |
+| category         | varchar   | Product category sold              |
+| quantiy          | int       | Quantity sold                     |
+| price_per_unit   | float     | Price per unit sold                |
+| cogs             | float     | Cost of goods sold                 |
+| total_sale       | float     | Total sales value (price * quantity)|
+
+*Note: There is a small typo in `quantiy` which should be considered if modifying the schema.*
+
+## Sample Queries
+
+
+## Contributing
+Contributions are welcome! Please fork the repository, create your branch, and submit pull requests with detailed explanations.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Contact
+For questions or collaboration, reach out to: your.email@example.com
+
+---
+
+This README provides a comprehensive guide to understanding, setting up, and analyzing your retail sales SQL project efficiently. Let me know if you want help adapting or expanding it further!
